@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rahulsah.diary.DiaryFragment">
+
+    <TextView
+        android:id="@+id/no_notes_found"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="No Notes Found \n Please click button below to create a new note"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/note_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/new_note_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="50dp"
+        android:background="#00BCD4"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/plus" />
+
+</FrameLayout>
